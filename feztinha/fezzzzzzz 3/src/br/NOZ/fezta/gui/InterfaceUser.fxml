@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseMoved="#mouseMoveu" prefHeight="320.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.NOZ.fezta.gui.InterfaceADMController">
+   <center>
+      <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab text="Empresa">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <SplitPane layoutX="-2.0" layoutY="-4.0" prefHeight="296.0" prefWidth="600.0" AnchorPane.bottomAnchor="-3.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-3.0">
+                          <items>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                 <children>
+                                    <Circle fill="#ff2d1f" layoutX="91.0" layoutY="79.0" radius="65.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.leftAnchor="26.0" AnchorPane.topAnchor="14.0" />
+                                    <TextField fx:id="empresaRua" layoutX="17.0" layoutY="147.0" onKeyReleased="#empresaDigitar" prefHeight="26.0" prefWidth="99.0" promptText="Rua" AnchorPane.leftAnchor="17.0" AnchorPane.topAnchor="147.0">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="14.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="empresaBairro" layoutX="17.0" layoutY="173.0" onKeyReleased="#empresaDigitar" prefHeight="26.0" prefWidth="144.0" promptText="Bairro" AnchorPane.leftAnchor="17.0" AnchorPane.topAnchor="173.0">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="14.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="empresaN" layoutX="116.0" layoutY="147.0" onKeyReleased="#empresaDigitar" prefHeight="26.0" prefWidth="45.0" promptText="Rua" AnchorPane.leftAnchor="116.0" AnchorPane.topAnchor="147.0">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="14.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="empresaCep" layoutX="17.0" layoutY="199.0" onKeyReleased="#empresaDigitar" prefHeight="26.0" prefWidth="144.0" promptText="Cep" AnchorPane.leftAnchor="17.0" AnchorPane.topAnchor="199.0">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="14.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="empresaNome" layoutX="188.0" layoutY="14.0" onKeyReleased="#empresaDigitar" prefHeight="65.0" prefWidth="386.0" promptText="Nome Da Empresa" AnchorPane.leftAnchor="188.0" AnchorPane.rightAnchor="24.0" AnchorPane.topAnchor="14.0">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="36.0" />
+                                       </font>
+                                    </TextField>
+                                 </children></AnchorPane>
+                          </items>
+                        </SplitPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Você">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="297.0" prefWidth="600.0">
+                     <children>
+                        <SplitPane dividerPositions="0.298" layoutY="-2.0" prefHeight="254.0" prefWidth="600.0" AnchorPane.bottomAnchor="-3.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-2.0">
+                           <items>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="294.0" prefWidth="139.0">
+                                 <children>
+                                    <Circle fill="DODGERBLUE" layoutX="88.0" layoutY="79.0" radius="65.0" stroke="BLACK" strokeType="INSIDE" />
+                                    <Text fx:id="fNome" layoutX="21.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Funcionario" wrappingWidth="133.13671875" AnchorPane.leftAnchor="21.0" AnchorPane.topAnchor="151.8720703125">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="fCPF" layoutX="21.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CPF" wrappingWidth="133.13671875" AnchorPane.leftAnchor="21.0" AnchorPane.topAnchor="172.0">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="fFuncao" layoutX="21.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Função" wrappingWidth="133.13671875" AnchorPane.leftAnchor="21.0" AnchorPane.topAnchor="192.8720703125">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="fSalario" layoutX="21.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Salário" wrappingWidth="133.13671875" AnchorPane.leftAnchor="21.0" AnchorPane.topAnchor="212.8720703125">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="18.0" />
+                                       </font>
+                                    </Text>
+                                 </children></AnchorPane>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="240.0" prefWidth="417.0">
+                                 <children>
+                                    <TableView fx:id="fFim" layoutX="203.0" layoutY="53.0" prefHeight="200.0" prefWidth="203.0" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="203.0" AnchorPane.topAnchor="53.0">
+                                       <columns>
+                                          <TableColumn fx:id="fcFim" prefWidth="202.0" text="Fim" />
+                                       </columns>
+                                    </TableView>
+                                    <TableView fx:id="fInicio" layoutY="53.0" prefHeight="200.0" prefWidth="203.0" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="53.0">
+                                      <columns>
+                                        <TableColumn fx:id="fcInicio" prefWidth="202.0" text="Inicio" />
+                                      </columns>
+                                    </TableView>
+                                    <ScrollBar layoutX="69.0" layoutY="126.0" orientation="VERTICAL" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                    <Text layoutX="69.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Escalamento" textAlignment="CENTER" wrappingWidth="279.13671875" AnchorPane.leftAnchor="69.0" AnchorPane.rightAnchor="68.86328125" AnchorPane.topAnchor="13.744140625">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="36.0" />
+                                       </font>
+                                    </Text>
+                                 </children></AnchorPane>
+                           </items>
+                        </SplitPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Bilheteria">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <SplitPane dividerPositions="0.29797979797979796" layoutY="-3.0" prefHeight="255.0" prefWidth="600.0" AnchorPane.bottomAnchor="-3.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-3.0">
+                           <items>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                 <children>
+                                    <AnchorPane prefHeight="251.0" prefWidth="178.0" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-3.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <TableView fx:id="bilheteClientes" onMouseExited="#bilheteTroca" prefHeight="218.0" prefWidth="179.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="0.0">
+                                             <columns>
+                                                <TableColumn fx:id="biLiCod" prefWidth="65.0" text="Código" />
+                                                <TableColumn fx:id="biLiNome" prefWidth="110.0" text="Nome" />
+                                             </columns>
+                                          </TableView>
+                                          <ScrollBar orientation="VERTICAL" prefHeight="250.0" prefWidth="14.0" AnchorPane.rightAnchor="0.0" />
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                 <children>
+                                    <ScrollBar layoutX="402.0" layoutY="27.0" orientation="VERTICAL" prefHeight="165.0" prefWidth="14.0" AnchorPane.bottomAnchor="-27.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="27.0" />
+                                    <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#novoCliente" text="Novo Cliente" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="18.0" />
+                                       </font>
+                                    </Button>
+                                    <Button layoutX="135.0" layoutY="14.0" mnemonicParsing="false" onAction="#EditarCliente" prefHeight="33.0" prefWidth="127.0" text="Editar Cliente" AnchorPane.leftAnchor="135.0" AnchorPane.topAnchor="14.0">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="18.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="bilheteSair" layoutX="261.0" layoutY="14.0" mnemonicParsing="false" onAction="#clienteFechar" onMouseMoved="#atualizarTotal" text="Fechar: R$ 0.0" AnchorPane.leftAnchor="261.0" AnchorPane.topAnchor="14.0">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="18.0" />
+                                       </font>
+                                    </Button>
+                                    <TextField fx:id="bilheteNome" layoutX="14.0" layoutY="47.0" prefHeight="33.0" prefWidth="216.0" promptText="Nome" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="47.0">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="18.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="bilheteCPF" layoutX="229.0" layoutY="47.0" prefHeight="33.0" prefWidth="172.0" promptText="CPF" AnchorPane.leftAnchor="229.0" AnchorPane.topAnchor="47.0">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="18.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="bilheteAno" layoutX="326.0" layoutY="113.0" prefHeight="33.0" prefWidth="71.0" promptText="AAAA" AnchorPane.leftAnchor="326.0" AnchorPane.topAnchor="113.0">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="18.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="bilheteMes" layoutX="307.0" layoutY="113.0" prefHeight="33.0" prefWidth="54.0" promptText="MM" AnchorPane.leftAnchor="307.0" AnchorPane.topAnchor="113.0">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="18.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="bilheteDia" layoutX="361.0" layoutY="113.0" prefHeight="33.0" prefWidth="48.0" promptText="DD" AnchorPane.leftAnchor="361.0" AnchorPane.topAnchor="113.0">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="18.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="bilheteEvento" layoutX="14.0" layoutY="113.0" prefHeight="33.0" prefWidth="216.0" promptText="Código do Evento" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="113.0">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="18.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="bilheteIngresso" layoutX="14.0" layoutY="80.0" onMouseExited="#procurarCliente" prefHeight="33.0" prefWidth="216.0" promptText="Código do Ingresso" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="80.0">
+                                       <font>
+                                          <Font name="Berlin Sans FB Bold" size="18.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="bilhetePista" layoutX="229.0" layoutY="113.0" prefHeight="33.0" prefWidth="173.0" promptText="Pista" AnchorPane.leftAnchor="229.0" AnchorPane.topAnchor="113.0">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="18.0" />
+                                       </font>
+                                    </TextField>
+                                    <TableView fx:id="clienteConsumo" layoutX="-4.0" layoutY="153.0" prefHeight="97.0" prefWidth="407.0" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="-4.0" AnchorPane.topAnchor="153.0">
+                                      <columns>
+                                        <TableColumn fx:id="biConCod" prefWidth="75.0" text="Código" />
+                                        <TableColumn fx:id="biConProd" prefWidth="177.0" text="Produto" />
+                                          <TableColumn fx:id="biConQ" prefWidth="46.0" text="QTD" />
+                                          <TableColumn fx:id="biConPreco" prefWidth="41.0" text="Preço" />
+                                      </columns>
+                                    </TableView>
+                                    <TextField fx:id="bilhetePreco" layoutX="230.0" layoutY="82.0" prefHeight="33.0" prefWidth="171.0" promptText="Preco">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="18.0" />
+                                       </font>
+                                    </TextField>
+                                 </children>
+                              </AnchorPane>
+                           </items>
+                        </SplitPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Bar">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <SplitPane dividerPositions="0.29797979797979796" layoutY="-3.0" prefHeight="255.0" prefWidth="600.0" AnchorPane.bottomAnchor="-3.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-3.0">
+                           <items>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                 <children>
+                                    <TextField fx:id="barProduto" layoutX="5.0" layoutY="90.0" prefHeight="33.0" prefWidth="114.0" promptText="Produto" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="90.0">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="18.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="barQuantidade" layoutX="119.0" layoutY="90.0" prefHeight="33.0" prefWidth="52.0" promptText="Qtd" AnchorPane.leftAnchor="119.0" AnchorPane.topAnchor="90.0">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="18.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="barCliente" layoutX="6.0" layoutY="57.0" prefHeight="33.0" prefWidth="165.0" promptText="Código do Cliente" AnchorPane.leftAnchor="6.0" AnchorPane.topAnchor="57.0">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="18.0" />
+                                       </font>
+                                    </TextField>
+                                    <Button layoutX="49.0" layoutY="127.0" mnemonicParsing="false" onAction="#barVender" text="Vender" AnchorPane.leftAnchor="49.0" AnchorPane.topAnchor="127.0">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="18.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                 <children>
+                                    <TableView fx:id="barTabela" layoutX="-1.0" prefHeight="254.0" prefWidth="419.0" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="0.0">
+                                      <columns>
+                                        <TableColumn fx:id="baLiCod" prefWidth="75.0" text="Código" />
+                                        <TableColumn fx:id="baLiNome" prefWidth="176.0" text="Nome" />
+                                          <TableColumn fx:id="baLiEstoque" prefWidth="84.0" text="Estoque" />
+                                          <TableColumn fx:id="baLiPreco" prefWidth="83.0" text="Preço" />
+                                      </columns>
+                                    </TableView>
+                                    <ScrollBar orientation="VERTICAL" prefHeight="253.0" prefWidth="14.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                 </children>
+                              </AnchorPane>
+                           </items>
+                        </SplitPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </center>
+   <top>
+      <AnchorPane prefHeight="42.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="533.0" layoutY="6.0" mnemonicParsing="false" onAction="#sairButton" text="Sair" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="6.0">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Button>
+            <Circle fill="DODGERBLUE" layoutX="27.0" layoutY="22.0" radius="19.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="3.0" />
+            <Text fx:id="funcionarioNomeTop" layoutX="60.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Funcionario" wrappingWidth="254.927734375" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="5.0" />
+            <Text fx:id="funcaoNaEmpresaTop" layoutX="60.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Função" wrappingWidth="228.13671875" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="20.0" />
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

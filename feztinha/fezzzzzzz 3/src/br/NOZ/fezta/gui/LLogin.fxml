@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="240.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.NOZ.fezta.gui.TelaLogin">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <PasswordField fx:id="senhaCaixa" layoutX="133.0" layoutY="120.0" promptText="Senha">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </PasswordField>
+            <Button layoutX="348.0" layoutY="167.0" mnemonicParsing="false" onAction="#fazerLogin" text="Button">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Button>
+            <TextField fx:id="loginCaixa" layoutX="133.0" layoutY="87.0" onKeyPressed="#naDigitacao" promptText="Login">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </TextField>
+            <Label fx:id="textoErro" layoutX="133.0" layoutY="173.0" text=" " textFill="#eb2f2f">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="153.0" layoutY="37.0" text="Bem Vindo!" textFill="#1b1616">
+               <font>
+                  <Font name="Berlin Sans FB" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
